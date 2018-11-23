@@ -23,6 +23,13 @@ from keras import utils
 y_train = utils.to_categorical(y_train)
 y_test = utils.to_categorical(y_test)
 
+# # Plot
+# import matplotlib.pyplot as plt
+# # %matplotlib inline
+# plt.figure(figsize=(6,6))
+# plt.imshow(X_train[1][:,:,0])
+# plt.title(Y_train[1].argmax())
+
 # Build NN Structure
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten
